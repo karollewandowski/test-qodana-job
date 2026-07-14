@@ -6,7 +6,7 @@ on:
     branches: [ main ]
 
 concurrency:
-  group: $\{{ github.workflow }}-$\{{ github.event.pull_request.number || github.ref }}
+  group: {{ github.workflow }}-{{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -23,7 +23,7 @@ jobs:
       - name: Fetch Sources
         uses: actions/checkout@v6
         with:
-          ref: $\{{ github.event.pull_request.head.sha }}  # to check out the actual pull request commit, not the merge commit
+          ref: {{ github.event.pull_request.head.sha }}  # to check out the actual pull request commit, not the merge commit
           fetch-depth: 0  # a full history is required for pull request analysis
       # Run Qodana inspections
       - name: Qodana - Code Inspection

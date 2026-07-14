@@ -180,3 +180,4 @@ TODO
 [jb:paid-plugins]: https://plugins.jetbrains.com/docs/marketplace/paid-plugins-marketplace.html
 [jb:ipe]: https://jb.gg/ipe
 [jb:ui-guidelines]: https://jetbrains.github.io/ui
+any

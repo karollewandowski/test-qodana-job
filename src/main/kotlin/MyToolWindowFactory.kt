@@ -35,3 +35,4 @@ class MyToolWindowFactory : ToolWindowFactory {
         fun getContent(): JBPanel<JBPanel<*>> = content
     }
 }
+// any

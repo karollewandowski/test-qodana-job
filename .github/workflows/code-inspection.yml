@@ -41,6 +41,13 @@ jobs:
       checks: write
       pull-requests: write
     steps:
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - name: Download Gradle dependencies
+        run: ./gradlew dependencies --no-daemon
       - name: Fetch Sources
         uses: actions/checkout@v7
         with:

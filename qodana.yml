@@ -11,6 +11,3 @@ exclude:
   - name: All
     paths:
       - .qodana
-  - name: XmlHighlighting
-    paths:
-      - src/main/resources/META-INF/plugin.xml

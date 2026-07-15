@@ -13,4 +13,4 @@ exclude:
       - .qodana
   - name: XmlHighlighting
     paths:
-      - src/resources/META-INF/plugin.xml
+      - src/main/resources/META-INF/plugin.xml

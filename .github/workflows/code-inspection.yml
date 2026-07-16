@@ -47,5 +47,4 @@ jobs:
         with:
           upload-result: true
           args: |
-            --linter qodana-jvm-community
             --within-docker false

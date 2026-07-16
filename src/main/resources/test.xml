@@ -1,0 +1,4 @@
+<any>
+<unresolved any="com.example.test.MyToolWindowFactory"/>
+<resolved any="org.correct.TestClass"/>
+</any>
